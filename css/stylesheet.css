@@ -1,0 +1,269 @@
+/* Credit to https://www.meziantou.net/how-to-make-a-star-wars-effect-in-html-css.htm for the scrolling text
+*
+*/
+/*
+Explicitly define a Segoe UI font-family so that we can assign Segoe UI 
+Semilight to an appropriate font-weight.
+*/
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 600;
+    src: local("Segoe UI Semibold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    src: local("Segoe UI Bold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Segoe UI Italic");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Segoe UI Bold Italic");
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    
+    
+    margin: 0;
+    overflow: hidden; /* Evite la scrollbar */
+
+}
+.page__style {
+    background: rgb(225, 225, 225);
+    font-family: OpenSans-Regular, sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto auto;
+    overflow: hidden;
+  }
+
+  .page__style .btn_nav {
+    border: none;
+    width: 60px;
+    padding-inline: 20px;
+    margin-inline: 10px;
+    background-color: transparent;
+  }
+.page__style .nav_bar {
+    text-align: center;
+    bottom: 5%;
+    width: 100%;
+    position: absolute;
+}
+.page__style .page__description {
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    text-align: center;
+  }
+
+  /*******PAGE 1*********/
+.page1{
+    background: rgb(194,192,192);
+    background: linear-gradient(90deg, rgba(194,192,192,1) 0%, rgba(194,192,192,1) 95%, rgba(255,255,255,1) 100%);
+}
+.page__style .title {
+    position: absolute;
+    left: -100px;
+    top: -150px;
+    width: 9602px;
+    height: 2604px;
+    font-weight: bold;
+    color: rgb(15, 119, 206);
+    text-shadow: 0 0 3px #ffffff;
+  }
+  #mprobable {
+    font-size: 68px;
+    font-family: "Segoe UI";
+    line-height: 1.2;
+    text-align: left;
+    transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -moz-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -webkit-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -ms-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    position: absolute;
+    left: 636px;
+    top: 296px;
+    width: 348px;
+    height: 66px;
+    z-index: auto;
+  }
+
+  
+  #entures {
+    font-size: 68px;
+    font-family: "Segoe UI";
+
+    line-height: 1.2;
+    text-align: left;
+    transform: matrix(2.51142441799259,0,0,2.02386923668573,0,0);
+    -moz-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -webkit-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -ms-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    position: absolute;
+    left: 571px;
+    top: 449px;
+    width: 243px;
+    height: 46px;
+    z-index: auto;
+  }
+  #V {
+    font-size: 97px;
+    font-family: "Lucida Fax";
+
+    line-height: 1.2;
+    text-align: left;
+    transform: matrix(2.51142441799259,0,0,2.02386923668573,0,0);
+    -moz-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -webkit-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -ms-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    position: absolute;
+    left: 306.5px;
+    top: 406.435px;
+    width: 67px;
+    height: 70px;
+    z-index: auto;
+
+  }
+  #I {
+    font-size: 100px;
+    font-family: "Tahoma";
+    color: rgb(15, 119, 206);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    transform: matrix(2.51142441799259,0,0,2.02386923668573,0,0);
+    -moz-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -webkit-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    -ms-transform: matrix( 2.51142441799259,0,0,2.02386923668573,0,0);
+    position: absolute;
+    left: 288.5px;
+    top: 235.648px;
+    width: 38px;
+    height: 73px;
+    z-index: auto;
+  }
+  
+  
+
+/*****PAGE 2******/
+
+/*****PAGE 3*****/
+.page3{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 95%, rgba(255,255,255,1) 100%);
+}
+/***************/
+    .marquee {
+    /* centrage de l'élément' */
+    height: 100px;	
+    overflow: hidden;
+    position: relative;
+    top:50%;
+    color: rgb(255, 255, 255);
+}
+
+.marquee > h3 {
+    white-space: nowrap;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+
+    
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    
+    /* Apply animation to this element */	
+    
+    -moz-animation: marquee_anim 15s linear infinite;
+    -webkit-animation: marquee_anim 15s linear infinite;
+    animation: marquee_anim 120s linear infinite;
+    
+}
+
+.animate_fade_out {
+    animation: slide_right 2s linear;
+}
+.fadeIn {
+    z-index: 10;
+  }
+
+@-moz-keyframes marquee_anim {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-500%); }
+   }
+   @-webkit-keyframes marquee_anim {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-500%); }
+   }
+   @keyframes marquee_anim {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-900%); /* Firefox bug fix */
+    -webkit-transform: translateX(-900%); /* Firefox bug fix */
+    transform: translateX(-900%); 
+    }
+   }
+
+@keyframes slide_right {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: .50;
+    }
+    50% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+  }
